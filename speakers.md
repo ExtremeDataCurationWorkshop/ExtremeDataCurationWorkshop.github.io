@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Speakers
 permalink: /speakers/
 nav_order: 4

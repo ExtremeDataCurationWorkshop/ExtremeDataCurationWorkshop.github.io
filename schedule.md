@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Schedule
 permalink: /schedule/
 nav_order: 3

@@ -12,3 +12,7 @@ vendor/
 # Editors
 .vscode/
 *.swp
+
+# Emacs lock/auto-save files
+\#*\#
+.\#*

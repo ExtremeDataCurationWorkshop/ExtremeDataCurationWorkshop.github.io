@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Logistics
 permalink: /logistics/
 nav_order: 5
