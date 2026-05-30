@@ -8,36 +8,29 @@ nav_order: 1
 
 ---
 
-Welcome to the Big Data Curation Workshop. This workshop brings together researchers and practitioners working on the challenges of curating large-scale, heterogeneous datasets — including data quality, provenance, integration, lifecycle management, and metadata standards.
+Welcome to the First Annual IEEE Workshop on Curation and Contextualization of Extreme Datasets! This workshop brings together a community to explore data curation as a life cycle-spanning work that maintains, preserves, and adds value to data and their computational context at modern extreme scales.
 
 ## About the Workshop
 
-*[Replace this paragraph with a 2–3 sentence description of the workshop's focus and goals.]*
+This workshop brings together researchers and practitioners working on the challenges of curating large-scale, heterogeneous datasets — including data quality, provenance, integration, lifecycle management, and metadata standards. We seek to engage researchers and practitioners working on theoretical foundations, computational models, systems, infrastructure, and application experiences for curation in contemporary data-intensive platforms. Our goal is not to converge on a single rule set for all domains, but to advance shared approaches and transparent, reusable ways for communities to describe conventions, vocabularies, formats, tools, provenance, computational context, and workflows.
 
-Topics of interest include (but are not limited to):
+Technical highlights include the intersection of information science and associated foundational theories, large-scale data management, HPC and associated data ecosystems, big data infrastructure, and associated benchmarking. The workshop also builds awareness of communitydriven interoperability frameworks and standards across these intersecting areas. Our goal is to promote clearer cross-disciplinary research agendas involving the methods, infrastructures, and interoperability practices needed to support responsible reuse at scale.
 
-- Data quality assessment and improvement
-- Metadata schemas and standards
-- Provenance and lineage tracking
-- Data integration and interoperability
-- Automated curation pipelines
-- FAIR data principles in practice
-- Curation for machine learning datasets
-- Long-term preservation and archiving
 
-## Important Dates
+## Important Dates (subject to change)
 
 | Event | Date |
 |---|---|
-| Paper submission deadline | TBD |
-| Notification of acceptance | TBD |
-| Camera-ready deadline | TBD |
-| Workshop date | TBD |
+| Call for papers available | July 5
+| Paper submission deadline | October 1 (AOE) |
+| Notification of acceptance | November 4 |
+| Camera-ready deadline | November 25 |
+| Workshop date | December 14 |
 
 ## Venue
 
-*[Location details — building, room, address.]*
+Extreme Curation 2026 will be held at the Sheraton Phoenix Downtown in Phoenix, Arizona, USA.
 
 ---
 
-Questions? Contact the organizers at [email@example.com](mailto:email@example.com).
+Questions? Contact the organizers at [ExtremeCurationWorkshop@googlegroups.com](mailto:ExtremeCurationWorkshop@googlegroups.com).

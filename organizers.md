@@ -9,21 +9,18 @@ nav_order: 6
 
 ## Workshop Chairs
 
-*[Name]*, [Title], [Affiliation]  
-*[Name]*, [Title], [Affiliation]
+* Katie Knight, Information Scientist, Oak Ridge National Laboratory
+* Patrick Widener, Senior Research Scientist, Oak Ridge National Laboratory
+* Matthew Wolf, Independent Researcher
 
 ## Program Committee
 
-- [Name], [Affiliation]
-- [Name], [Affiliation]
-- [Name], [Affiliation]
-- *More to be announced*
+* Christine Kirkpatrick, San Diego Supercomputer Center
+* Beth Plale, University of Oregon
+* Wade Bishop, University of Tennessee
+* Suzie Allard, University of Tennessee
+* Christopher Erdmann, SciLifeLab Data Centre (Sweden)
 
-## Steering Committee
-
-*(if applicable)*
-
-- [Name], [Affiliation]
 
 ---
 
