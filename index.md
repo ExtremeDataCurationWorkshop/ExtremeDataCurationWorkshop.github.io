@@ -1,12 +1,10 @@
 ---
-layout: home
-title: Home
+layout: default
+title: "Home"
 nav_order: 1
 ---
 
-# Big Data Curation Workshop
-
-**Co-located with [Conference Name] — [City, Date]**
+# Welcome
 
 ---
 
