@@ -9,26 +9,20 @@ nav_order: 5
 
 ## Venue
 
-*[Building name, room number, street address, city, country.]*
-
-[Optional: embed a map or link to Google Maps]
+The workshop will be held at at the Sheraton Phoenix Downtown in Phoenix, Arizona, USA.
 
 ## Registration
 
-Registration is handled through the main [conference registration page](#). Workshop attendance is included with full conference registration.
+See the main [conference registration page](https://bigdataieee.org/BigData2026/attending/registration/).
 
-## Travel
+## Travel and accommodations
 
-*[Brief notes on getting to the venue — airport codes, recommended transit, etc.]*
-
-## Accommodation
-
-*[Recommend 1–3 nearby hotels or link to the main conference hotel block.]*
+See the BigData 2026 [travel](https://bigdataieee.org/BigData2026/attending/travel/) and [hotels](https://bigdataieee.org/BigData2026/attending/venue/) pages for more information.
 
 ## Visa Information
 
-Attendees requiring a visa invitation letter should contact [email@example.com](mailto:email@example.com) with their full name, affiliation, and paper/registration confirmation.
+Attendees requiring a visa invitation letter should register for the conference first. During the registration process, you will be asked if you require a letter; if so, one will be emailed to you automatically upon completion of your registration.
 
 ## Code of Conduct
 
-All participants are expected to follow the [conference/ACM/IEEE code of conduct](#). Please report any concerns to the workshop organizers.
+All participants are expected to abide by the [IEEE Event Conduct & Safety Statement](https://events.ieee.org/planning-basics/general-guidelines/ieee-event-conduct-and-safety-statement-for-conferences/). Please report any concerns to the workshop organizers.

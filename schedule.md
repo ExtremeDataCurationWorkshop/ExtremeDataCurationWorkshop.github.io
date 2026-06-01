@@ -7,11 +7,6 @@ nav_order: 3
 
 # Workshop Schedule
 
-**Date:** TBD  
-**Location:** TBD
-
----
-
 *The schedule will be posted after paper acceptance notifications are sent.*
 
 <!--
