@@ -24,7 +24,7 @@ sitemap:
 @import "foundation-components/dropdown-buttons";
 @import "foundation-components/flex-video";
 @import "foundation-components/forms";
-@import "foundation-components/grid";
+@import "grid_patched";
 @import "foundation-components/inline-lists";
 @import "foundation-components/keystrokes";
 @import "foundation-components/panels";
@@ -39,7 +39,7 @@ sitemap:
 
 @import "06_typography.scss";
 @import "07_layout.scss";
-@import "foundation-components/grid";
+@import "grid_patched";
 @import "09_elements.scss";
 
 {% if site.asciidoctor-enabled == true %}
