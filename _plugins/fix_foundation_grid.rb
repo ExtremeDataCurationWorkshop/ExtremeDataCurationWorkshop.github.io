@@ -1,41 +1,60 @@
-# Patches the Feeling Responsive theme's Foundation 5 grid component before
-# Sass compilation. The theme's _grid.scss uses:
+# Patches the Feeling Responsive theme's Foundation 5 Sass files before
+# compilation. The theme wraps pure-Sass arithmetic in CSS calc(), which
+# causes Ruby Sass to treat the result as a string and fail when any
+# subsequent arithmetic is attempted.
+#
+# Known broken patterns and their fixes:
 #   percentage(calc($colNumber / $totalColumns))
-# which fails in all Sass versions because calc() returns a CSS string, not a
-# number. We replace it with the correct:
-#   percentage($colNumber / $totalColumns)
+#     -> percentage($colNumber / $totalColumns)
+#
+#   calc(strip-unit($value) / strip-unit($base-value) * 1rem)
+#     -> strip-unit($value) / strip-unit($base-value) * 1rem
 #
 # Using a Generator (priority :highest) ensures this runs before Jekyll
 # converts any Sass files.
 module Jekyll
-  class FixFoundationGrid < Generator
+  class FixFoundationSass < Generator
     safe true
     priority :highest
+
+    PATCHES = [
+      # Foundation grid: percentage(calc(...)) -> percentage(...)
+      [
+        "percentage(calc($colNumber / $totalColumns))",
+        "percentage($colNumber / $totalColumns)"
+      ],
+      # rem-calc / similar: calc(strip-unit arithmetic) used as a number
+      [
+        "calc(strip-unit($value) / strip-unit($base-value) * 1rem)",
+        "strip-unit($value) / strip-unit($base-value) * 1rem"
+      ],
+    ].freeze
 
     def generate(site)
       theme = site.theme
       unless theme
-        Jekyll.logger.warn "FixFoundationGrid:", "No theme found, skipping patch"
+        Jekyll.logger.warn "FixFoundationSass:", "No theme found, skipping patches"
         return
       end
 
-      grid_path = File.join(theme.sass_path, "foundation-components", "_grid.scss")
-      unless File.exist?(grid_path)
-        Jekyll.logger.warn "FixFoundationGrid:", "Grid file not found at #{grid_path}"
+      sass_dir = theme.sass_path
+      unless Dir.exist?(sass_dir)
+        Jekyll.logger.warn "FixFoundationSass:", "Theme sass_path not found: #{sass_dir}"
         return
       end
 
-      content = File.read(grid_path)
-      fixed = content.gsub(
-        "percentage(calc($colNumber / $totalColumns))",
-        "percentage($colNumber / $totalColumns)"
-      )
+      Dir.glob(File.join(sass_dir, "**", "*.scss")).each do |path|
+        content = File.read(path)
+        patched = content.dup
 
-      if fixed == content
-        Jekyll.logger.info "FixFoundationGrid:", "No patch needed (already fixed or pattern not found)"
-      else
-        File.write(grid_path, fixed)
-        Jekyll.logger.info "FixFoundationGrid:", "Patched Foundation grid calc() bug in #{grid_path}"
+        PATCHES.each do |broken, fixed|
+          patched.gsub!(broken, fixed)
+        end
+
+        next if patched == content
+
+        File.write(path, patched)
+        Jekyll.logger.info "FixFoundationSass:", "Patched #{File.basename(path)}"
       end
     end
   end
