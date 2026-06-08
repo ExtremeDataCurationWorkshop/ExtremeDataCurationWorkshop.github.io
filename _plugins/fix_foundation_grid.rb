@@ -28,6 +28,11 @@ module Jekyll
         "calc(strip-unit($value) / strip-unit($base-value) * 1rem)",
         "strip-unit($value) / strip-unit($base-value) * 1rem"
       ],
+      # strip-unit via px division wrapped in calc(), used as a divisor
+      [
+        "calc($value / 1px)",
+        "$value / 1px"
+      ],
     ].freeze
 
     def generate(site)
