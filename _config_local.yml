@@ -1,0 +1,10 @@
+# Local development override — use the gem instead of remote_theme
+# to avoid SSL issues when fetching from GitHub at build time.
+#
+# Usage:
+#   bundle exec jekyll serve --config _config.yml,_config_local.yml
+#
+# Values here take precedence over _config.yml.
+
+theme: minimal-mistakes-jekyll
+remote_theme: ""

@@ -1,8 +1,7 @@
 ---
-layout: default
+layout: single
 title: Schedule
 permalink: /schedule/
-nav_order: 3
 ---
 
 # Workshop Schedule

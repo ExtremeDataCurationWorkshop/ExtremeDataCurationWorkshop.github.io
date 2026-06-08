@@ -1,8 +1,7 @@
 ---
-layout: default
+layout: single
 title: Organizers
 permalink: /organizers/
-nav_order: 6
 ---
 
 # Organizers

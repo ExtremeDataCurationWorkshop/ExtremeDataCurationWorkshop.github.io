@@ -1,0 +1,33 @@
+# Navigation links used by Minimal Mistakes
+# "main" appears in the masthead (top nav bar)
+# "sidebar" is referenced by page front matter for the left sidebar nav
+
+main:
+  - title: "Home"
+    url: /
+  - title: "Call for Papers"
+    url: /cfp/
+  - title: "Schedule"
+    url: /schedule/
+  - title: "Speakers"
+    url: /speakers/
+  - title: "Logistics"
+    url: /logistics/
+  - title: "Organizers"
+    url: /organizers/
+
+sidebar:
+  - title: "Navigation"
+    children:
+      - title: "Home"
+        url: /
+      - title: "Call for Papers"
+        url: /cfp/
+      - title: "Schedule"
+        url: /schedule/
+      - title: "Speakers"
+        url: /speakers/
+      - title: "Logistics"
+        url: /logistics/
+      - title: "Organizers"
+        url: /organizers/

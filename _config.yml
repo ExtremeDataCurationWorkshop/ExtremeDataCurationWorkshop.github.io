@@ -1,57 +1,61 @@
 title: "Extreme Curation 2026"
 subtitle: "First Annual Workshop on Curation and Contextualization of Extreme Datasets"
-
 description: >-
   A workshop bringing together researchers and practitioners to advance
   the theory and practice of big data curation.
 
-venue: >-
-  In association with the 2026 IEEE International Conference on Big Data
-  (IEEE BigData 2026) — Phoenix AZ, December 14–17 2026
+# GitHub Pages deployment uses remote_theme.
+# For local preview, _config_local.yml overrides this with the gem.
+remote_theme: mmistakes/minimal-mistakes
 
-# Theme — vendored locally from pages-themes/minimal
-# (no theme: line needed; _layouts/default.html and _sass/ take precedence)
+# GitHub repo (required by jekyll-seo-tag)
+repository: ExtremeDataCurationWorkshop/ExtremeDataCurationWorkshop.github.io
 
-
-# GitHub repo (required by jekyll-seo-tag locally)
-repository: BigDataCurationWorkshop/BigDataCurationWorkshop.github.io
-
-#Site URL (update when you know the final GitHub Pages URL)
-#url: "https://bigdatacurationworkshop.github.io"
+#url: "https://extremedatacurationworkshop.github.io"
 #baseurl: ""
 
-# Author / contact
+# Minimal Mistakes skin — options: default, air, aqua, contrast, dark, dirt,
+#   neon, mint, plum, sunrise
+minimal_mistakes_skin: "default"
+
+# Site author (populates sidebar author block)
 author:
   name: "Workshop Organizers"
-  email: ""
+  email: "ExtremeCurationWorkshop@googlegroups.com"
+  bio: >-
+    In association with the 2026 IEEE International Conference on Big Data
+    (IEEE BigData 2026) — Phoenix AZ, December 14–17 2026
 
-# Navigation pages (in order)
-header_pages:
-  - index.md
-  - cfp.md
-  - schedule.md
-  - speakers.md
-  - logistics.md
-  - organizers.md
+# Navigation — defined in _data/navigation.yml
+# The key "main" is used by the masthead (top nav bar)
 
 # Markdown processor
 markdown: kramdown
 highlighter: rouge
 
-# Plugins allowed on GitHub Pages
+# Plugins
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  
+  - jekyll-remote-theme
+  - jekyll-include-cache
+
 # Exclude from build
 exclude:
   - Gemfile
   - Gemfile.lock
   - vendor/
   - README.md
-  - "\\#*\\#"   # Emacs auto-save files
-  - ".\\#*"    # Emacs lock symlinks
+  - _config_local.yml
+  - "\\#*\\#"
+  - ".\\#*"
 
-
-polling: true
-
+# Defaults — apply layout and sidebar nav to all pages
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      sidebar:
+        nav: "main"
