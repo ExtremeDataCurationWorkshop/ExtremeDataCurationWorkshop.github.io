@@ -72,9 +72,9 @@ module Jekyll
         # Pass 2: general regex — strip calc() from any expression that
         # contains a Sass $variable. Ruby Sass does not evaluate $vars inside
         # calc(), so they must be bare Sass arithmetic instead.
-        # Matches: calc(  ...anything containing $...  )
-        # Uses a simple non-greedy match; nested parens are not expected here.
-        patched.gsub!(/calc\(([^)]*\$[^)]*)\)/, '\1')
+        # Negative lookbehind (?<![-\w]) prevents matching rem-calc( or
+        # any other identifier that ends in "calc".
+        patched.gsub!(/(?<![-\w])calc\(([^)]*\$[^)]*)\)/, '\1')
 
         next if patched == content
 
