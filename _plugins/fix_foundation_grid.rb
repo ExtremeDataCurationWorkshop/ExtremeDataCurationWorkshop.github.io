@@ -33,6 +33,11 @@ module Jekyll
         "calc($value / 1px)",
         "$value / 1px"
       ],
+      # block-grid percentage: calc((100/$even) / 100) passed to percentage()
+      [
+        "calc((100/$even) / 100)",
+        "(100/$even) / 100"
+      ],
     ].freeze
 
     def generate(site)
