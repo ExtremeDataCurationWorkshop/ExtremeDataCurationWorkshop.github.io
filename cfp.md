@@ -1,8 +1,7 @@
 ---
-layout: default
+layout: page
 title: Call for Papers
 permalink: /cfp/
-nav_order: 2
 ---
 
 # Call for Papers

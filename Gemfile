@@ -1,9 +1,13 @@
 source "https://rubygems.org"
 
 # Use the same gem bundle as GitHub Pages for local parity.
-# Run: bundle install
-# Preview: bundle exec jekyll serve
+# Run:     bundle install
+# Preview: bundle exec jekyll serve  (requires SSL — see _config_local.yml)
 gem "github-pages", group: :jekyll_plugins
+
+# Required by Feeling Responsive via remote_theme
+gem "jekyll-remote-theme"
+gem "jekyll-include-cache"
 
 # ----------------------------------------------------------------
 # Ruby version note:

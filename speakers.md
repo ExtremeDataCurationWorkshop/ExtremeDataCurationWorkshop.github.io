@@ -1,8 +1,7 @@
 ---
-layout: default
+layout: page
 title: Speakers
 permalink: /speakers/
-nav_order: 4
 ---
 
 # Invited Speakers
