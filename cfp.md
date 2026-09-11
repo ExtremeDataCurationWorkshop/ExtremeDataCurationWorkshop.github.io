@@ -42,7 +42,7 @@ submission, but all submissions will be evaluated in part for completeness.
 
 ## Submission Instructions
 
-Submission information will be provided here when available.
+Submit your paper at [https://wi-lab.com/cyberchair/2026/bigdata26/scripts/ws_submit.php?subarea=S](this link).
 
 All submissions will be single-blind peer-reviewed. Authors of accepted papers will receive an invitation
 for an oral presentation at the workshop. At least one author of each accepted paper must register as an
