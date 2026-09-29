@@ -19,7 +19,7 @@ Technical highlights include the intersection of information science and associa
 
 | Event | Date |
 |---|---|
-| Paper submission deadline | October 1, 2026 (AOE) |
+| Paper submission deadline | ~~October 1, 2026~~ October 9, 2026 (AOE) |
 | Notification of acceptance | November 4, 2026 |
 | Camera-ready deadline | November 25, 2026 |
 | Workshop date | TBD during December 14-17, 2026 |
