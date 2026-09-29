@@ -61,7 +61,7 @@ submit. For more information, please consult
 
 | Event | Date |
 |---|---|
-| Submission deadline | October 1, 2026 |
+| Submission deadline | ~~October 1, 2026~~ October 9, 2026 |
 | Notification | November 4, 2026 |
 | Camera-ready | November 25, 2026 |
 | Workshop | TBD during December 14--17, 2026 |
